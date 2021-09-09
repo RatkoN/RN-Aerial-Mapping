@@ -1,0 +1,139 @@
+<DOCTYPE>
+    <html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RN Aerial Maping</title>
+        <link rel="stylesheet" href="style.css">
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">    
+    </head>    
+    
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="logo.png" alt=""></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Naslovna strana</a></li>
+                        <li><a href="AerloLidar.html">Aerolasersko skeniranje</a></li>
+                        <li><a href="Aerofotogrametrija.html">Aerofotogrametrijsko snimanje</a></li>
+                        <li><a href="RemoteSensing.html">Daljinska detekcija</a></li>
+                        <li><a href="BIM.html">BIM</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="header7">
+                <p>Kolorni infracrveni snimci</p>
+
+                <h1>Infracrveni aerofoto snimci koriste deo elektromagnetnog spektra, poznat kao bliskoinfracrveni, koji se kreće od 0,70 mm do 1,0 mm (0,7 do 1,0 mikrometra ili milioniti deo metra). RN Aerial Maping sistem senzora opremljen je mernom RGB i NIR kamerom. Četvorokanalne (R + G + B + NIR) slike se dobijaju kao rezultat snimanja iz vazduha.
+                    <br></br>
+                    Nevidljiva, bliskoinfracrvena svetlost može se „videti“ pomeranjem primarnih boja (crvena, zelena, plava). Na taj način, bliskoinfracrvene talasne dužine postaju vidljive kao crvene, dok se crvene talasne dužine pojavljuju kao zelene, a zelene kao plave. Plave talasne dužine se pomeraju iz vidljivog dela spektra i tako izgledaju kao crne. Na ovakvim snimcima (CIR) vegetacija izgleda crveno, dok voda uglavnom izgleda crno, sa veštačkim strukturama poput zgrada i puteva koje prikazuju kao svetlo plavo-zelenu.
+                    <br></br>
+                    Infracrvena boja je posebno korisna, jer se unutrašnja ćelijska struktura zdravih biljaka odražava na bliskoinfracrveni spektar zračenja. Hlorofil u biljkama odražava zelene talasne dužine; zato zdrave biljke izgledaju zeleno za ljude. Pored toga, reflektovani infracrveni zraci su pouzdaniji u praćenju zdravlja biljaka u odnosu na odbijene zelene talasne dužine. CIR (Coloured InfraRed) ima tendenciju da prodre u atmosferu bolje od prirodne boje i pruža oštrije slike. To CIR čini posebno vrednim u oblastima zemlje koji su vrući i vlažni tokom leta.</h1>
+                <br>
+            </div>
+        </section>
+
+        <section class="header105">
+            <h1><strong>Specifikacija</strong></h1>
+            <h2>Primena</h2>
+            <!--Ovo je levi  tekst tekst-->
+            <div>
+                <ul>
+                <li>Sirovi snimci, ortofoto ili pravi ortofoto</li>
+                <li>Georeferenciranje: direktno, aerotriangulacija</li>
+                <li>Standardni raster formati</li>
+                <li>Rezolucija 2 do 30cm/pix</li>
+                <li>4 kanala (R+G+B+NIR)</li>
+                <li>Bez distorzije</li>
+                <li>12-bit radiometrijska rezolucija</li>
+                <li>Snimci dostupni nekoliko sati nakon završetka misije snimanja</li>
+                </ul>
+            </div>
+
+            <!--Ovo je desni tekst-->
+            <ul>
+                <li>Precizna poljoprivreda</li>
+                <li>Identifikovanje useva</li>
+                <li>Procena biomase vegetacije</li>
+                <li>Ocenjivanje vlažnosti zemljišta</li>
+                <li>Ocenjivanje čistoće vazduha</li>
+            </ul>
+        </section>
+
+        <section class="header6">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="t">1 / 3</div>
+                  <img src="NIR1.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="">2 / 3</div>
+                  <img src="NIR2.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+              
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+              <br>
+              
+                <div style="text-align:center">
+                 <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+              </div>
+
+              <script class="text/javascript">
+                var slideIndex = 1;
+                showSlides(slideIndex);
+    
+                function plusSlides(n){
+                   showSlides(slideIndex += n);
+                }
+    
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+    
+                function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length} ;
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+               dots[slideIndex-1].className += " active";
+                } 
+            </script>
+        </section>
+
+        <style>
+            .footer {
+               position: fixed;
+               left: 0;
+               bottom: 0;
+               width: 100%;
+               background-color: rgb(20, 20, 20);
+               color: white;
+               text-align: center;
+            }
+        </style>
+    
+        <div class="footer">
+            <p>© 2021 RN Aerial Maping. All Rights Reserved.</p>
+        </div>
+    </body>
+    

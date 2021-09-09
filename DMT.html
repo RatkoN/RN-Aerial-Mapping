@@ -1,0 +1,151 @@
+<DOCTYPE>
+    <html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RN Aerial Maping</title>
+        <link rel="stylesheet" href="style.css">
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">    
+    </head>    
+    
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="logo.png" alt=""></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Naslovna strana</a></li>
+                        <li><a href="AerloLidar.html">Aerolasersko skeniranje</a></li>
+                        <li><a href="Aerofotogrametrija.html">Aerofotogrametrijsko snimanje</a></li>
+                        <li><a href="RemoteSensing.html">Daljinska detekcija</a></li>
+                        <li><a href="BIM.html">BIM</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="header5">
+                <p>Digitalni model terena</p>
+
+                <h1>Digitalni model terena (DMT) je standardni način prikazivanja površine terena u digitalnom obliku. 
+                    Površina terena predstavljena je matematičkim modelom koji se zasniva na korišćenju pravilne mreže (grid) ili na mreži nepravilnih trouglova (TIN). 
+                    Ovi modeli formirani su na osnovu poznatih položaja i visina karakterističnih tačaka i linija.</h1>
+                <br>
+                
+                </br>
+                <h2>Lasersko skeniranje (LiDAR) je najefikasnija metoda za prikupljanje DMT podataka. 
+                    Korišćenje visokokvalitetnog LiDAR skenera (Teledyne Optech Galaxy) i merne aerofoto kamere (Phase One iXU RS1000) i naknadna obrada podataka omogućavaju optimalan balans između zahteva za kvalitetom podataka, s jedne strane, i efikasnosti i ekonomičnosti, sa druge. 
+                    Postoje različiti nivoi obrade i brzina obrade u zavisnosti od potrebne tačnosti: </h2>
+                <h3>1) automatski klasifikovane tačke oblaka - izvučene tačke tla</h3> 
+                <h4>2) izabrane tačke prema visinskoj toleranciji (automatski postupak - vrlo brzo)</h4> 
+                <h5>3) ručno izabrane tačke + prelomne linije iz aerofoto snimaka (najveća tačnost i pouzdanost)</h5>
+        
+
+            </div>
+        </section>
+
+        <section class="header103">
+            <h1><strong>Specifikacija</strong></h1>
+            <h2>Primena</h2>
+            <!--Ovo je levi  tekst tekst-->
+            <div><ul>
+                <li>Izvordni podaci (tačke, linije, poligoni) u standardnom vektorskom formatu (DXF, shape datoteke, GML..)</li>
+                <li>Generisani DMT u TIN ili grif formatu</li>
+                <li>TIN u bilo kojem standardnom vektorskom formatu (DXF, shape datoteke, GML)</li>
+                <li>GRID u bilo kojem standardnom formatu (GeoTif, ..)</li>
+                <li>DMT tačnost do 5cm</li>
+                <li>Generisanje izohipsi</li>
+                <li>Poprečni i podužni preseci</li>
+            </ul></div>
+
+            <!--Ovo je desni tekst-->
+            <ul><li>Hidrologija</li>
+                <li>Šumarstvo</li>
+                <li>Projektovanje infrastrukture</li>
+                <li>3D vizuelizacija</li>
+                <li>Analiza vidljivosti</li>
+            </ul>
+        </section>
+
+        <section class="header6">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="t">1 / 3</div>
+                  <img src="dmt1.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="">2 / 3</div>
+                  <img src="dmt2.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="">3 / 3</div>
+                  <img src="dmt3.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+
+              <script class="text/javascript">
+                var slideIndex = 1;
+                showSlides(slideIndex);
+    
+                function plusSlides(n){
+                   showSlides(slideIndex += n);
+                }
+    
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+    
+                function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length} ;
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+               dots[slideIndex-1].className += " active";
+                } 
+            </script>
+        </section>
+
+        <style>
+            .footer {
+               position: fixed;
+               left: 0;
+               bottom: 0;
+               width: 100%;
+               background-color: rgb(20, 20, 20);
+               color: white;
+               text-align: center;
+            }
+        </style>
+    
+        <div class="footer">
+            <p>© 2021 RN Aerial Maping. All Rights Reserved.</p>
+        </div>
+    </body>
+    </html>
+</DOCTYPE>
+    

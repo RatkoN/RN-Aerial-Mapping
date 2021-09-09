@@ -1,0 +1,148 @@
+<DOCTYPE>
+    <html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RN Aerial Maping</title>
+        <link rel="stylesheet" href="style.css">
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">    
+    </head>    
+    
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="logo.png" alt=""></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Naslovna strana</a></li>
+                        <li><a href="AerloLidar.html">Aerolasersko skeniranje</a></li>
+                        <li><a href="Aerofotogrametrija.html">Aerofotogrametrijsko snimanje</a></li>
+                        <li><a href="RemoteSensing.html">Daljinska detekcija</a></li>
+                        <li><a href="BIM.html">BIM</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="header5">
+                <p>Aerofoto snimci</p>
+
+                <h1>RN Aerial Maping je privatna kompanija u Srbiji koja poseduje zaokruženi, profesionalni sistem aerofoto snimanja. Savremeni sistem kamera omogućio je brzu reakciju u smislu planiranja kampanja i snimanja iz vazduha, vreme realizacije projekta je značajno smanjeno, proces razvoja digitalnih topografskih proizvoda je tehnološki završen i ubrzan. Kompanija može snimiti manje ili veće teritorije od interesa i da brzo reaguje na zahtev klijenata u Srbiji i regionu. 
+                    Pored prevladavajućeg aerofoto snimanja, RN Aerial Maping pruža usluge i snimanje mikrolokacija uz pomoć bespilotnih letelica ili balona.</h1>
+                <br>
+                
+                
+
+            </div>
+        </section>
+
+        <section class="header100">
+            <h1><strong>Specifikacija</strong></h1>
+            <h2>Primena</h2>
+            <!--Ovo je levi  tekst tekst-->
+            <div><ul>
+                <li>Snimci sa parametrima georeferenciranja</li>
+                <li>Metode georeferenciranja: direktno georeferenciranje, aerotriangulacija</li>
+                <li>Standardni raster formati</li>
+                <li>Rezolucija od 2 do 30cm/pix</li>
+                <li>4 kanala (R+G+B+NIR) ili bilo koja kombinacija 3 kanala (RGB, CIR, NDVI)</li>
+                <li>Bez distorzije (bazirano na kalibraciji)</li>
+                <li>12-bit radiometrijska rezolucija</li>
+                <li>Brzo vreme reagovanja</li>
+                <li>Snimci dostupni nekoliko sati nakon završene misije snimanja</li>
+            </ul></div>
+
+            <!--Ovo je desni tekst-->
+            <ul><li>Osiguranje</li>
+                <li>Praćenje katastrofa / prirodnih nepogoda (brzo reagovanje, brz produkt)</li>
+                <li>Produkcija digitalnog ortofotoa</li>
+                <li>Kolotizacija oblaka tačaka</li>
+            </ul>
+        </section>
+
+
+        <section class="header6">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="t">1 / 3</div>
+                  <img src="af1.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="">2 / 3</div>
+                  <img src="af2.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="">3 / 3</div>
+                  <img src="af3.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+
+              <script class="text/javascript">
+                var slideIndex = 1;
+                showSlides(slideIndex);
+    
+                function plusSlides(n){
+                   showSlides(slideIndex += n);
+                }
+    
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+    
+                function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length} ;
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+               dots[slideIndex-1].className += " active";
+                } 
+            </script>
+        </section>
+
+        <style>
+            .footer {
+               position: fixed;
+               left: 0;
+               bottom: 0;
+               width: 100%;
+               background-color: rgb(20, 20, 20);
+               color: white;
+               text-align: center;
+            }
+        </style>
+    
+        <div class="footer">
+            <p>© 2021 RN Aerial Maping. All Rights Reserved.</p>
+        </div>
+
+        
+
+
+        
+    </body>
+    

@@ -1,0 +1,191 @@
+<DOCTYPE>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RN Aerial Maping - Aerolasersko skeniranje</title>
+        <link rel="stylesheet" href="style.css">
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">    
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="logo.png" alt=""></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Naslovna strana</a></li>
+                        <li><a href="AerloLidar.html">Aerolasersko skeniranje</a></li>
+                        <li><a href="Aerofotogrametrija.html">Aerofotogrametrijsko snimanje</a></li>
+                        <li><a href="RemoteSensing.html">Daljinska detekcija</a></li>
+                        <li><a href="BIM.html">BIM</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            
+
+            <div class="dalekovodi">
+                <p>Mapiranje dalekovoda</p>
+                <h1>LiDAR predstavlja efikasan način za mapiranje postojećih vodova i okolnih karakteristika terena, vegetacije, 
+                    zgrada i drugih građevina. LiDAR sistem nema poteškoće u pristupu i pregledu čak i najnepristupačnijeg terena na brz i
+                     ekonomičan način, bez izloženosti ljudi. Modeliranje terena zasniva se na klasifikovanim tačkama, 
+                     ali se osim toga žice, priključci i tornjevi takođe mogu vektorizirati. 
+                     Pomoću podataka LiDAR sistema lako se može otkriti vegetacija ili drugi objekti u blizini koridora dalekovoda. 
+                     Takođe je moguće posmatrati padine ranjive na eroziju i utvrditi njihov uticaj na dalekovod.</h1>
+
+                <h2>Pogledajte primere mapiranja dalekovoda</h2> 
+                
+                <body>
+                    <section class="">
+                        <div></div>
+                        <div class="text-box3">
+                            <p></p>
+                            <a href="dalekovod.pdf" class="hero-btn">Prezentacija</a>
+                        </div>
+                    </section>
+                </body>
+
+            </div>
+        </section>
+
+
+        <style type="text/css">
+            .roman{
+                list-style-type: disc;;
+            }
+            .square {
+                list-style-type: square;
+                margin-left: -2em;
+            }
+        </style>
+
+
+        <section class="header101">
+            <h1><strong>Specifikacija</strong></h1>
+            <h2>Primena</h2>
+            <!--Ovo je levi  tekst tekst-->
+            <div>
+                <ul class="roman">
+                    <ul class="square">
+                        <li>Klasifikovani oblak tačaka</li>
+                        <li>3D vektor</li>
+                    </ul>
+    
+                </ul>
+            </div>
+
+            <!--Ovo je desni tekst-->
+            <ul><li>Projektovanje mreže elektrovodova</li>
+                <li>Menadžment resursima (upravljanje imovinom)</li>
+                <li>Analiza rizika</li>
+                <li>Automatska detekcija područja sa ugruženim elektrovodovima</li>
+                <li>Merenje rastojanja između elektrovodova i drugih objekata</li>
+            </ul>
+
+            <h3><ul><li>Format isporuke</li></ul></h3>
+            <h4><ul><li>Precizna detekcija žice, čak i mreže niskog napona</li></ul></h4>
+            <h5><ul><li>Tačnost 5-10 cm</li></ul></h5>
+
+
+        </section>
+
+        <section class="header6">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="t">1 / 3</div>
+                  <img src="dalekovod1.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="">2 / 3</div>
+                  <img src="dalekovod2.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="">3 / 3</div>
+                  <img src="dalekovod3.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="">4 / 5</div>
+                    <img src="dalekovod4.jpg" style="width:100%">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="">5 / 5</div>
+                    <img src="Dalekovodi-240-1536x590.jpg" style="width:100%">
+                    <div class="text"></div>
+                </div>
+
+
+              
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+              </div>
+
+              <script class="text/javascript">
+                var slideIndex = 1;
+                showSlides(slideIndex);
+    
+                function plusSlides(n){
+                   showSlides(slideIndex += n);
+                }
+    
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+    
+                function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length} ;
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+               dots[slideIndex-1].className += " active";
+                } 
+            </script>
+        </section>
+
+        <style>
+            .footer {
+               position: fixed;
+               left: 0;
+               bottom: 0;
+               width: 100%;
+               background-color: rgb(20, 20, 20);
+               color: white;
+               text-align: center;
+            }
+        </style>
+    
+        <div class="footer">
+            <p>© 2021 RN Aerial Maping. All Rights Reserved.</p>
+        </div>
+
+
+    </body>
+    </html>

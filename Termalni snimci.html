@@ -1,0 +1,126 @@
+<DOCTYPE>
+    <html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RN Aerial Maping</title>
+        <link rel="stylesheet" href="style.css">
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">    
+    </head>    
+    
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="logo.png" alt=""></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Naslovna strana</a></li>
+                        <li><a href="AerloLidar.html">Aerolasersko skeniranje</a></li>
+                        <li><a href="Aerofotogrametrija.html">Aerofotogrametrijsko snimanje</a></li>
+                        <li><a href="RemoteSensing.html">Daljinska detekcija</a></li>
+                        <li><a href="BIM.html">BIM</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="header5">
+                <p>Termalni snimci</p>
+
+                <h1>Infracrvena (IR) termometrija je jedna od neinvazivnih tehnika merenja temperature koja omogućava dobijanje površinskih temperatura i u tački i na površini. 
+                    RN Aerial Maping koristi podatke o apsolutnoj temperaturi ugrađene u slike visokokvalitetnih termalnih kamera kako bi se osiguralo konzistentno termalno bojenje širom područja karte</h1>
+
+            </div>
+        </section>
+
+        <section class="header106">
+            <h1><strong>Specifikacija</strong></h1>
+            <h2>Primena</h2>
+            <!--Ovo je levi  tekst tekst-->
+            <div>
+                <ul>
+                <li>Sirovi snimci, ortofoto ili pravi ortofoto</li>
+                <li>Standardni rasterski formati (GeoTIF, TIF+TFW, ECW, JPEG2000)</li>
+                <li>Preklapanje sa RGB snimcima/ortofotom</li>
+                <li>Generisanje tematskih mapa sa sirovim termalnim snimcima/ortofotom</li>
+                </ul>
+            </div>
+
+            <!--Ovo je desni tekst-->
+            <ul>
+                <li>Energetska efikasnost zgrada</li>
+                <li>Osiguranje</li>
+                <li>Komunalna mreža (struja, nafta, gas, toplovod)</li>
+                <li>Curenje cevovoda</li>
+                <li>Detekcija žarišta</li>
+                <li>Solarni potencijal</li>
+            </ul>
+        </section>
+
+        <section class="header6">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="t">1 / 3</div>
+                  <img src="TC.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+              
+              
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+              </div>
+
+              <script class="text/javascript">
+                var slideIndex = 1;
+                showSlides(slideIndex);
+    
+                function plusSlides(n){
+                   showSlides(slideIndex += n);
+                }
+    
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+    
+                function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length} ;
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+               dots[slideIndex-1].className += " active";
+                } 
+            </script>
+        </section>
+
+        <style>
+            .footer {
+               position: fixed;
+               left: 0;
+               bottom: 0;
+               width: 100%;
+               background-color: rgb(20, 20, 20);
+               color: white;
+               text-align: center;
+            }
+        </style>
+    
+        <div class="footer">
+            <p>© 2021 RN Aerial Maping. All Rights Reserved.</p>
+        </div> 
+    </body>
+    

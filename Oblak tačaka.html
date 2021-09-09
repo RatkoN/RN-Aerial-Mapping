@@ -1,0 +1,94 @@
+<DOCTYPE>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RN Aerial Maping - Aerolasersko skeniranje</title>
+        <link rel="stylesheet" href="style.css">
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">    
+    </head>
+
+
+    
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="logo.png" alt=""></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Naslovna strana</a></li>
+                        <li><a href="AerloLidar.html">Aerolasersko skeniranje</a></li>
+                        <li><a href="Aerofotogrametrija.html">Aerofotogrametrijsko snimanje</a></li>
+                        <li><a href="RemoteSensing.html">Daljinska detekcija</a></li>
+                        <li><a href="BIM.html">BIM</a></li>
+                    </ul>
+                </div>
+            </nav> 
+
+
+            <div class="text-box">
+                <h1>Oblak tačaka</h1>
+                <p>LiDAR je metoda daljinskog osmatranja koja koristi svetlo u obliku laserskih impulsa za merenje rastojanja do površine. Jednom kada se emitovani svetlosni snop odbije od površine, senzor meri vreme i količinu refleksne svetlosti i tako određuje udaljenost do objekta / površine. Podaci iz LIDAR-a, u kombinaciji sa drugim podacima prikupljenim fotogrametrijom, daju precizne, trodimenzionalne informacije o prostornim entitetima i njihovim karakteristikama, bilo da su prirodne (površinski teren, vegetacija) ili veštačke (građevine).
+                    <br>
+                    Pored snimanja pomoću RGB + NIR kamere, RN Aerial Maping nudi i prikupljanje podataka LiDAR sistemom. Zapravo, najbolja moguća interpretacija prikupljenih prostornih podataka dobijena je istovremenim snimanjem aerofoto kamerom i LiDAR-om, na koji način RN Aerial Maping uvek i radi radi. Na ovaj način se prikupljaju prostorni podaci visoke tačnosti: trodimenzionalne koordinate svake tačke iz oblaka tačke dolaze iz LiDAR-a, a boja iz aerofoto snimaka napravljenih visoko kvalitetnom aerofoto kamerom.
+                </p>
+            </div>
+        </section>
+
+        <section class="header102">
+            <h1><strong>Specifikacija</strong></h1>
+            <h2>Primena</h2>
+            <!--Ovo je levi  tekst tekst-->
+            <div><ul>
+                <li>Oblak tačaka u LAS, LAZ, PLY formatu</li>
+                <li>Kolorizacija iz georeferenciranih snimaka</li>
+                <li>Gustina do 100 tačaka/m2</li>
+                <li>4 kanala za kolorizaciju</li>
+                <li>Tačnost od 5-10cm (zavisno od visine letenja)</li>
+                <li>Do 8 pogratnih signala za svaki pojedinačni signal</li>
+            </ul></div>
+
+            <!--Ovo je desni tekst-->
+            <ul><li>Hidrologija</li>
+                <li>Šumarstvo</li>
+                <li>Projektovanje infrastrukture</li>
+                <li>Projektovanje elektrovodova</li>
+                <li>3D vizuelizacija</li>
+                <li>Arheologija</li>
+            </ul>
+        </section>
+
+        <body>
+            <section class="header1">
+                <div style="text-shadow: 3px 3px 2px #2A2B33"></div>
+                <div class="text-box1">
+                    <h1>Primeri oblaka tačaka dobijenih pomoću avio laserskog skeniranja</h1>
+                    <p></p>
+                    <a href="OblakTacakaLugano.html" class="hero-btn">Oblak tačaka Lugano</a>
+                    <a href="OblakTacakaKragujevac.html" class="hero-btn">Oblak tačaka Kragujevac</a>
+                </div>
+            </section>
+        </body>
+
+        <style>
+            .footer {
+               position: fixed;
+               left: 0;
+               bottom: 0;
+               width: 100%;
+               background-color: rgb(20, 20, 20);
+               color: white;
+               text-align: center;
+            }
+        </style>
+    
+        <div class="footer">
+            <p>© 2021 RN Aerial Maping. All Rights Reserved.</p>
+        </div>
+        
+    </body>
+    </html>
+    
+

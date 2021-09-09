@@ -1,0 +1,1054 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(ALS.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 50px;
+}
+
+.text-box p{
+    text-align: justify;
+    font-size: 18px;
+    margin: 10px 0 40px;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+}
+
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+
+}
+
+.text-box1{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+/*header za oblak tacaka */
+.header1{
+    min-height: 50vh;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(4,9,30,0.7);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/* Header za stranicu OblakTacakaKragujevac */
+.header2{
+    min-height: 100vh;
+    width: 100%;
+    background-image:  url(oblaktacaka1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Header za stranicu OblakTacakaLugano */
+.header3{
+    min-height: 100vh;
+    width: 100%;
+    background-image:  url(oblaktacaka2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Podesavanje kod dalekovoda */
+.dalekovodi a img{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    top: 50px;
+    left: 150px;
+    
+}
+
+.dalekovodi p{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0 40px;
+    
+}
+
+
+.dalekovodi h1{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.dalekovodi h2{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 18px;
+}
+/* Kraj editovanja stranice Dalekovodi*/
+
+
+.text-box3{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+
+/* ovaj header koristio si kod sledecih stranica: AerofotoSnimci, BIM, DMT, DOF, DSM, MapiranjeZelenih povrsina, RemoteSensing, TDOF, Termalni snimci za tekst.*/
+.header5 p{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0 40px;
+    font-style: inherit;
+}
+
+.header5 h1{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+    font-size: 18px;
+}
+
+.header5 h2{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+    font-size: 18px;
+}
+
+.header5 h3{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+    font-size: 18px;
+}
+
+.header5 h4{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 84%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+    font-size: 18px;
+}
+
+.header5 h5{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+    font-size: 18px;
+}
+/* Kraj editovanja header5 koji se koristi za tekst uglavnom */
+
+
+
+/* Header 6 se koristi za podesavanje pozadine za sliku u tekstu koja se nalazi u drugoj sekciji, 
+uglavnom za slike manje od 100vh. Koristi se kod sledecih stranica: DMT, DOF, Kolorizovani infracrveni snimci, Mapiranje zelenih povrsina. */
+.header6{
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20,20,20,0.7);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1400px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/* kraj skripte za slide shor */
+
+/*ovaj header se koristi za podesavanje teksta u stranici Kolorizovani infracrveni snimci*/
+  .header7 h1{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+    font-size: 18px;
+}
+
+.header7 p{
+    width: 100%;
+    color: whitesmoke;
+    position: relative;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 30px;
+    margin: 0px 0 40px;
+}
+/*kraj podesavanja teksta u stranici Kolorizovani infracrveni snimci*/
+
+
+
+/* ovaj header sam koristio kod sledecis stranica BIM, RemoteSensing.. 
+razlikuju se parametri za width i height u odnosu na header6*/
+.header8{
+    min-height: 100vh;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(20,20,20,0.7);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* kontakt */
+.header9{
+    min-height: 40vh;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(12, 12, 12, 0.7);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header9 div h1{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+    font-size: 18px;
+}
+
+.header9 div h2{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+    font-size: 18px;
+}
+
+.header9 div h3{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+    font-size: 18px;
+}
+
+.header9 div h4{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+    font-size: 18px;
+}
+
+.header9 div h5{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+    font-size: 18px;
+}
+
+.header9 div h6{
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+    font-size: 30px;
+    font-style: oblique;
+}
+
+.header9 div h7{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 45%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+    font-size: 18px;
+}
+
+.header9 div h8{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 52%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+    font-size: 18px;
+}
+
+.header9 div h9{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 59%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+    font-size: 18px;
+}
+
+.header9 div h10{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 35%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    text-align: justify;
+    font-size: 25px;
+    font-style: oblique;
+}
+
+.header9 div img{
+    position: absolute;
+    top: 5px;
+    left: 70px;
+}
+
+.sertifikat1{
+    position: absolute;
+    top: 100px;
+    left: 1200px;
+}
+
+.sertifikat2{
+    position: absolute;
+    top: 100px;
+    left: 1050px;
+}
+
+.header9 div p{
+    width: 100%;
+    color: whitesmoke;
+    position: absolute;
+    top: 60px;
+    left: 1250px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 40px;
+}
+
+/*Kraj podesavanja kontakt polja*/
+
+
+/*Header10 sluzi za pdesavanje pozadine kod stranice TDOF */
+.header10{
+    min-height: 180vh;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(20,20,20,0.7);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+/*Header sluza ya podesavanje pozadine kod stranice DSM*/
+.header11{
+    min-height: 110vh;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(20,20,20,0.7);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+
+
+
+/* Dodavanje specifikacija */
+.header100{
+    min-height: 40vh;
+    width: 100%;
+    height: 30%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header100 h1{
+    width: 100%;
+    color: royalblue;
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 26px;
+}
+
+.header100 h2{
+    width: 100%;
+    color: royalblue;
+    position: absolute;
+    top: 15%;
+    left: 99%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 26px;
+}
+
+/* za desni tekst */
+.header100 ul{
+    width: 100%;
+    color: whitesmoke;
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 16px;
+    font-family: serif;
+}
+/*za levi tekst */
+.header100 div ul{
+    width: 100%;
+    color: whitesmoke;
+    position: absolute;
+    top: 60%;
+    left: 56%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 16px;
+    font-family: serif;
+
+}
+
+
+/*Za strnicu dof, tekst nije poravnat */
+.header101{
+    min-height: 40vh;
+    width: 100%;
+    height: 30%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header101 div ul{
+    width: 100%;
+    color: whitesmoke;
+    position: absolute;
+    top: 40%;
+    left: 56%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 16px;
+    font-family: serif;
+
+}
+
+.header101 ul{
+    width: 100%;
+    color: whitesmoke;
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 16px;
+    font-family: serif;
+}
+
+.header101 h1{
+    width: 100%;
+    color: royalblue;
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 26px;
+}
+
+.header101 h2{
+    width: 100%;
+    color: royalblue;
+    position: absolute;
+    top: 15%;
+    left: 99%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 26px;
+}
+/*gotovo formatiranje stranice dof*/
+
+
+/* Za stranicu TDOF je isti tekst kao i kod DOF, pa se može korstiti isto formatiranje*/
+
+/*Za stranicu OblacTacaka mora se pomeriti teskt Primena i Specifikacija*/
+.header102{
+    min-height: 40vh;
+    width: 100%;
+    height: 30%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header102 h1{
+    width: 100%;
+    color: royalblue;
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 26px;
+}
+
+.header102 h2{
+    width: 100%;
+    color: royalblue;
+    position: absolute;
+    top: 10%;
+    left: 99%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 26px;
+}
+
+.header102 div ul{
+    width: 100%;
+    color: whitesmoke;
+    position: absolute;
+    top: 40%;
+    left: 56%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 16px;
+    font-family: serif;
+
+}
+
+.header102 ul{
+    width: 100%;
+    color: whitesmoke;
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 16px;
+    font-family: serif;
+}
+/*gotovo formatiranje stranice Oblak tačaka */
+
+/* Za DMT stranicu mora se podesiti formatiranje */
+
+.header103{
+    min-height: 40vh;
+    width: 100%;
+    height: 30%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header103 h1{
+    width: 100%;
+    color: royalblue;
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 26px;
+}
+
+.header103 h2{
+    width: 100%;
+    color: royalblue;
+    position: absolute;
+    top: 10%;
+    left: 119%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 26px;
+}
+
+.header103 div ul{
+    width: 100%;
+    color: whitesmoke;
+    position: absolute;
+    top: 45%;
+    left: 56%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 16px;
+    font-family: serif;
+
+}
+
+.header103 ul{
+    width: 100%;
+    color: whitesmoke;
+    position: absolute;
+    top: 38%;
+    left: 120%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 16px;
+    font-family: serif;
+}
+
+/* gotovo formatiranje DMT-a. */
+
+/* Za stranicu DSM mora se ponovo formatirati tekst */
+.header104{
+    min-height: 40vh;
+    width: 100%;
+    height: 30%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header104 h1{
+    width: 100%;
+    color: royalblue;
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 26px;
+}
+
+.header104 h2{
+    width: 100%;
+    color: royalblue;
+    position: absolute;
+    top: 10%;
+    left: 99%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 26px;
+}
+
+.header104 div ul{
+    width: 100%;
+    color: whitesmoke;
+    position: absolute;
+    top: 30%;
+    left: 56%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 16px;
+    font-family: serif;
+
+}
+
+.header104 ul{
+    width: 100%;
+    color: whitesmoke;
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 16px;
+    font-family: serif;
+}
+/*kraj formatiranja specifikaicja u DSM stranici */
+
+
+
+/* formatiranje za stranicu Kolorizovani snimci */
+.header105{
+    min-height: 40vh;
+    width: 100%;
+    height: 30%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header105 h1{
+    width: 100%;
+    color: royalblue;
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 26px;
+}
+
+.header105 h2{
+    width: 100%;
+    color: royalblue;
+    position: absolute;
+    top: 10%;
+    left: 99%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 26px;
+}
+
+.header105 div ul{
+    width: 100%;
+    color: whitesmoke;
+    position: absolute;
+    top: 46%;
+    left: 56%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 16px;
+    font-family: serif;
+
+}
+
+.header105 ul{
+    width: 100%;
+    color: whitesmoke;
+    position: absolute;
+    top: 35%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 16px;
+    font-family: serif;
+}
+/*kraj formatiranja Kolorizovani snimci stranice */
+
+/* formatiranje stranice Termalni snimci */
+.header106{
+    min-height: 40vh;
+    width: 100%;
+    height: 30%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header106 h1{
+    width: 100%;
+    color: royalblue;
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 26px;
+}
+
+.header106 h2{
+    width: 100%;
+    color: royalblue;
+    position: absolute;
+    top: 10%;
+    left: 99%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 26px;
+}
+
+.header106 div ul{
+    width: 100%;
+    color: whitesmoke;
+    position: absolute;
+    top: 34%;
+    left: 56%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 16px;
+    font-family: serif;
+
+}
+
+.header106 ul{
+    width: 100%;
+    color: whitesmoke;
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 16px;
+    font-family: serif;
+}
+/*kraj formatiranja Termalni snimci stranice */
+
+
+/*Formatiranje stranice Dalekovodi */
+
+.header101 h3{
+    width: 100%;
+    color: whitesmoke;
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 16px;
+}
+
+.header101 h4{
+    width: 100%;
+    color:whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 16px;
+    font-style: inherit;
+}
+
+.header101 h5{
+    width: 100%;
+    color: whitesmoke;
+    position: absolute;
+    top: 57%;
+    left: 7%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 16px;
+}
+/*Gotovo formatiranje stranice Dalekovodi */
+
